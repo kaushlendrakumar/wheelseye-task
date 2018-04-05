@@ -1,0 +1,152 @@
+$silver-verylight : rgba(120,102,102,0.2);
+$silver-light : rgba(120,102,102,0.6);
+$silver-medium : rgba(102,102,102,0.8);
+$silver-normal : rgba(102,102,102,1);
+
+$font-weight-light : 300;
+$font-weight-medium : 500;
+$font-weight-dark : 600;
+
+body{
+	margin: 0px;
+	background: $silver-verylight;
+	font-family: 'droid_sansregular';
+	#main-wrapper{
+		width: 600px;
+		margin: auto;
+		padding: 40px 20px;
+		#logo-wrapper{
+			img{
+				height: 40px;
+			}
+		}
+		.heading{
+			padding: 20px 15px 0px 15px;
+			font-size: 24px;
+			font-weight: $font-weight-dark;
+		}
+		.small-text-info{
+			padding: 0px 15px;
+			font-size: 12px;
+		}
+		.table-wrapper{
+			font-size: 14px;
+			padding: 20px 15px;
+			//background: red;
+			text-align: left;
+			input[type=number]::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				opacity: 0;
+			}
+			table{
+				width: 100%;
+				border-collapse: collapse;
+				margin-bottom: 50px;
+				thead{
+					tr{
+						th{
+							border-bottom: 1px solid $silver-normal;
+							padding: 6px 12px;
+						}
+					}
+				}
+				tbody{
+					tr{
+						td{
+							vertical-align: middle;
+							padding: 6px 12px;
+							&.qty-input-wrapper{
+								.input-wrapper{
+									float: left;
+								    height: 21px;
+									input{
+										width: 40px;
+										text-align: right;
+									}
+								}
+								.buttons{
+									float: left;
+									height: 21px;
+									padding-left: 2px;
+									.plus{
+										height: 10px;
+									    width: 10px;
+									    background: $silver-medium;
+									    text-align: center;
+									    line-height: 12px;
+									    font-size: 10px;
+									    cursor: pointer;
+									}
+									.minus{
+										height: 10px;
+									    width: 10px;
+									    background: $silver-medium;
+									    text-align: center;
+									    line-height: 10px;
+									    font-size: 10px;
+									    margin-top: 1px;
+									    cursor: pointer;
+									}
+								}
+							}
+							.delete-item{
+								cursor: pointer;
+								height: 25px;
+							}
+							
+						}
+						&:hover{
+							background: #ccc;
+						}
+					}
+				}
+			}
+			#gstActive{
+				padding: 15px;
+				margin-left: 15px;
+			}
+			.text-price{
+				padding: 15px;
+				color: $silver-medium;
+				.text{
+					width: 50%;
+					float: left;
+				}
+				.price{
+					width: 50%;
+					float: left;
+					text-align: right;
+				}
+			}
+			.total-wrapper{
+				color: rgba(0,0,0,0.8);
+				margin-top: 10px;
+				font-weight: $font-weight-dark;
+			}
+			.submit-btn{
+				float: right;
+				margin-top: 20px;
+				margin-right: 10px;
+				padding: 6px 12px;
+				border-radius: 4px;
+				color: blue;
+				background: #fff;
+				border: 1px solid blue;
+				cursor: pointer;
+				&:hover{
+					color: #fff;
+					background: blue; 
+					border: 1px solid blue;
+				}
+			}	
+		}
+		.json-data-wrapper{
+			padding: 15px;
+			background: #fff;
+			margin-top: 50px;
+			display: none;
+			word-wrap: break-word;
+		}
+	}
+	
+}

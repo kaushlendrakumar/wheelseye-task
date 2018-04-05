@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wheelseye</title>
+	<link rel="stylesheet" type="text/css" href="../assets/webfonts/droidsans_regular_macroman/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+
+	<div id="main-wrapper">
+		<div id="logo-wrapper">
+			<img src="../assets/img/logo-white.png">
+		</div>
+		<div class="heading">Your Basket</div>
+		<div class="small-text-info">
+			<i class="fas fa-pound-sign"></i>
+			<div>Item you have added to your basket are show below.</div>
+			<div>Adjust the quantities or remove items before continuing your purchase.</div>
+		</div>
+		<div class="table-wrapper">
+			<table>
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Price</th>
+						<th>Qty</th>
+						<th>Cost</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Cotton T-Shirt, Medium</td>
+						<td>Rs. <span class="cost-initial">2</span></td>
+						<td class="qty-input-wrapper">
+							<div class="input-wrapper">
+								<input type="number" min="0" value="1" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+							</div>
+							<div class="buttons">
+								<div class="plus">+</div>
+								<div class="minus">-</div>
+							</div>
+						</td>
+						<td>Rs. <span class="cost-final">2</span></td>
+						<td>
+							<img src="../assets/img/delete.png" class="delete-item">
+						</td>
+					</tr>
+					<tr>
+						<td>Baseball Cap, One Size</td>
+						<td>Rs. <span class="cost-initial">6</span></td>
+						<td class="qty-input-wrapper">
+							<div class="input-wrapper">
+								<input type="number" min="0" value="1" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+							</div>
+							<div class="buttons">
+								<div class="plus">+</div>
+								<div class="minus">-</div>
+							</div>
+						</td>
+						<td>Rs. <span class="cost-final">6</span></td>
+						<td>
+							<img src="../assets/img/delete.png" class="delete-item">
+						</td>
+					</tr>
+					<tr>
+						<td>Swim Shorts, Medium</td>
+						<td>Rs. <span class="cost-initial">3</span></td>
+						<td class="qty-input-wrapper">
+							<div class="input-wrapper">
+								<input type="number" min="0" value="1" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+							</div>
+							<div class="buttons">
+								<div class="plus">+</div>
+								<div class="minus">-</div>
+							</div>
+						</td>
+						<td>Rs. <span class="cost-final">3</span></td>
+						<td>
+							<img src="../assets/img/delete.png" class="delete-item">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div>
+				<input type="checkbox" id="gstActive">
+				Gst include
+			</div>
+			<div class="text-price">
+				<div class="text">Subtotal</div>
+				<div class="price">Rs. <span class="subtotal">11</span></div>
+			</div>
+			<div class="text-price gstWrapper" style="display: none;">
+				<div class="text">GST @ 18%</div>
+				<div class="price">Rs. <span class="gstAmount">0</span></div>
+			</div>
+
+			<div class="text-price total-wrapper">
+				<div class="text">Total Cost</div>
+				<div class="price">Rs. <span class="totalcost">11</span></div>
+			</div>
+			<div>
+				<button class="submit-btn" id="submit-btn">Submit >></button>
+			</div>
+		</div>
+
+		<div class="json-data-wrapper"></div>
+	</div>
+
+
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/index.js"></script>
+</body>
+</html>

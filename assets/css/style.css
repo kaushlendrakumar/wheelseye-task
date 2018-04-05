@@ -1,0 +1,179 @@
+/* line 10, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body {
+  margin: 0px;
+  background: rgba(120, 102, 102, 0.2);
+  font-family: 'droid_sansregular';
+}
+
+/* line 14, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper {
+  width: 600px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* line 19, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper #logo-wrapper img {
+  height: 40px;
+}
+
+/* line 23, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .heading {
+  padding: 20px 15px 0px 15px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* line 28, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .small-text-info {
+  padding: 0px 15px;
+  font-size: 12px;
+}
+
+/* line 32, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper {
+  font-size: 14px;
+  padding: 20px 15px;
+  text-align: left;
+}
+
+/* line 37, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  opacity: 0;
+}
+
+/* line 41, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+/* line 47, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table thead tr th {
+  border-bottom: 1px solid #666666;
+  padding: 6px 12px;
+}
+
+/* line 55, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table tbody tr td {
+  vertical-align: middle;
+  padding: 6px 12px;
+}
+
+/* line 59, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table tbody tr td.qty-input-wrapper .input-wrapper {
+  float: left;
+  height: 21px;
+}
+
+/* line 62, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table tbody tr td.qty-input-wrapper .input-wrapper input {
+  width: 40px;
+  text-align: right;
+}
+
+/* line 67, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table tbody tr td.qty-input-wrapper .buttons {
+  float: left;
+  height: 21px;
+  padding-left: 2px;
+}
+
+/* line 71, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table tbody tr td.qty-input-wrapper .buttons .plus {
+  height: 10px;
+  width: 10px;
+  background: rgba(102, 102, 102, 0.8);
+  text-align: center;
+  line-height: 12px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* line 80, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table tbody tr td.qty-input-wrapper .buttons .minus {
+  height: 10px;
+  width: 10px;
+  background: rgba(102, 102, 102, 0.8);
+  text-align: center;
+  line-height: 10px;
+  font-size: 10px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+/* line 92, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table tbody tr td .delete-item {
+  cursor: pointer;
+  height: 25px;
+}
+
+/* line 98, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper table tbody tr:hover {
+  background: #ccc;
+}
+
+/* line 104, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper #gstActive {
+  padding: 15px;
+  margin-left: 15px;
+}
+
+/* line 108, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper .text-price {
+  padding: 15px;
+  color: rgba(102, 102, 102, 0.8);
+}
+
+/* line 111, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper .text-price .text {
+  width: 50%;
+  float: left;
+}
+
+/* line 115, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper .text-price .price {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+/* line 121, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper .total-wrapper {
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* line 126, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper .submit-btn {
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: blue;
+  background: #fff;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+/* line 136, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .table-wrapper .submit-btn:hover {
+  color: #fff;
+  background: blue;
+  border: 1px solid blue;
+}
+
+/* line 143, /home/kaushlendra/code/github/task/assets/scss/style.scss */
+body #main-wrapper .json-data-wrapper {
+  padding: 15px;
+  background: #fff;
+  margin-top: 50px;
+  display: none;
+  word-wrap: break-word;
+}
+
+/*# sourceMappingURL=../css/style.map */
